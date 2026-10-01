@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="You're invited to an unforgettable birthday party. Save the date, explore the memories, and RSVP today!">
+  <title>You're Invited! — A Birthday Party</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Birthday party invitation home"><span class="brand-mark" aria-hidden="true">✳</span><span>THE PARTY<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#details">Details</a><a href="#gallery">Gallery</a><a href="#rsvp">RSVP</a><a href="#location">Location</a>
+    </nav>
+    <a class="nav-cta" href="#rsvp">Save your spot <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <span class="hero-orb orb-pink" aria-hidden="true"></span><span class="hero-orb orb-blue" aria-hidden="true"></span><span class="hero-orb orb-yellow" aria-hidden="true"></span>
+      <span class="hero-star star-one" aria-hidden="true">✦</span><span class="hero-star star-two" aria-hidden="true">✧</span><span class="hero-star star-three" aria-hidden="true">✳</span>
+      <div class="balloon balloon-pink" aria-hidden="true"><span></span></div><div class="balloon balloon-blue" aria-hidden="true"><span></span></div><div class="balloon balloon-yellow" aria-hidden="true"><span></span></div><div class="balloon balloon-purple" aria-hidden="true"><span></span></div>
+      <div class="hero-content">
+          <p class="hero-overline"><span class="overline-rule"></span> BIG JOY. BIG CAKE. YOU.<span class="overline-rule"></span></p>
+        <h1 id="hero-title"><span class="invite-line">🎉 You're invited! 🎉</span><span class="happy-line">Happy Birthday,</span><span class="name-line" data-birthday-name>Sofia</span></h1>
+        <p class="hero-subtitle">Come celebrate, laugh, dance and make unforgettable memories with us! <span aria-hidden="true">🥳</span></p>
+        <a class="party-button" href="#details">LET'S PARTY! <span aria-hidden="true">🎉</span></a>
+        <p class="hero-date"><span aria-hidden="true">✦</span> <span data-event-date="long">Saturday, November 14, 2026</span> <span class="date-divider">·</span> <span data-event-time>6:00 PM</span></p>
+      </div>
+      <div class="hero-illustration" aria-hidden="true">
+        <div class="hero-halo"></div><span class="hero-doodle doodle-heart">♥</span><span class="hero-doodle doodle-spark">✦</span>
+        <div class="cake-hero"><span class="hero-candle candle-a"><i></i></span><span class="hero-candle candle-b"><i></i></span><span class="hero-candle candle-c"><i></i></span><div class="hero-frosting"></div><div class="hero-cake-top"></div><div class="hero-cake-bottom"></div><div class="hero-plate"></div></div>
+        <div class="cake-tag"><span>ONE MORE</span><strong>trip<br>around ☀</strong></div>
+        <span class="hero-sparkle sparkle-a">✷</span><span class="hero-sparkle sparkle-b">✦</span>
+      </div>
+      <a class="scroll-cue" href="#countdown" aria-label="Scroll down to the countdown"><span></span> GOOD THINGS AHEAD</a>
+    </section>
+
+    <section class="countdown-section" id="countdown" aria-labelledby="countdown-title">
+      <div class="countdown-wrap">
+        <div class="countdown-heading"><span class="section-kicker">THE JOY IS GETTING CLOSER</span><h2 id="countdown-title">Ready, set, <em>party!</em></h2></div>
+        <div class="countdown" id="countdown-clock" aria-label="Time until the birthday party" aria-live="off">
+          <div class="time-card time-pink"><span class="time-value" id="days">00</span><span class="time-label">DAYS</span></div><span class="time-colon" aria-hidden="true">:</span>
+          <div class="time-card time-purple"><span class="time-value" id="hours">00</span><span class="time-label">HOURS</span></div><span class="time-colon" aria-hidden="true">:</span>
+          <div class="time-card time-blue"><span class="time-value" id="minutes">00</span><span class="time-label">MINUTES</span></div><span class="time-colon" aria-hidden="true">:</span>
+          <div class="time-card time-orange"><span class="time-value" id="seconds">00</span><span class="time-label">SECONDS</span></div>
+        </div>
+        <p class="countdown-started" id="countdown-message" hidden>🎊 THE PARTY HAS STARTED! 🎊</p>
+      </div>
+      <span class="countdown-sticker sticker-left" aria-hidden="true">✦</span><span class="countdown-sticker sticker-right" aria-hidden="true">♥</span>
+    </section>
+
+    <section class="details-section section-pad" id="details" aria-labelledby="details-title">
+      <div class="section-shell">
+        <div class="section-heading reveal"><div><span class="section-kicker">THE WHEN, WHERE & WHAT-TO-WEAR</span><h2 id="details-title">Party <em>details</em></h2></div><p>Clear your calendar. This is the good kind of plans.</p></div>
+        <div class="details-grid">
+          <article class="detail-card detail-date reveal"><span class="detail-icon" aria-hidden="true">📅</span><span class="detail-label">SAVE THE DATE</span><h3 data-event-date="weekday">Saturday</h3><p data-event-date="long">November 14, 2026</p><span class="card-confetti" aria-hidden="true">✳</span></article>
+          <article class="detail-card detail-time reveal"><span class="detail-icon" aria-hidden="true">⏰</span><span class="detail-label">WHEN THE FUN STARTS</span><h3 data-event-time>6:00 PM</h3><p>Drinks, dinner & dancing</p><span class="card-confetti" aria-hidden="true">✦</span></article>
+          <article class="detail-card detail-venue reveal"><span class="detail-icon" aria-hidden="true">📍</span><span class="detail-label">WHERE TO FIND US</span><h3 data-event-venue>The Glasshouse</h3><p><span data-event-address>47 Wythe Avenue</span>, Brooklyn</p><span class="card-confetti" aria-hidden="true">✿</span></article>
+          <article class="detail-card detail-dress reveal"><span class="detail-icon" aria-hidden="true">👗</span><span class="detail-label">COME AS YOUR SPARKLY SELF</span><h3 data-dress-code>Garden party</h3><p data-dress-note>Dress up, but stay comfy</p><span class="card-confetti" aria-hidden="true">♥</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="message-section section-pad" aria-labelledby="message-title">
+      <div class="message-decoration message-balloons" aria-hidden="true"><span>🎈</span><span>🎈</span></div><span class="message-star" aria-hidden="true">✦</span><span class="message-heart" aria-hidden="true">♥</span>
+      <div class="message-inner reveal"><span class="message-ribbon">A LITTLE NOTE FROM US</span><h2 id="message-title">Let's make some<br><em>memories!</em> <span aria-hidden="true">💖</span></h2><p id="birthday-message">Good food, big laughs, questionable dance moves, and all our favorite people in one room. The only thing missing is you. Come help us make this birthday one for the books!</p><span class="message-signoff">Bring your party shoes <span aria-hidden="true">✧</span></span></div>
+      <span class="message-decoration message-confetti" aria-hidden="true">✴</span>
+    </section>
+
+    <section class="gallery-section section-pad" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-shell">
+        <div class="section-heading reveal"><div><span class="section-kicker">LIFE LOOKS BETTER IN COLOR</span><h2 id="gallery-title">Good times, <em>on repeat.</em></h2></div><p>A little preview of the good stuff. Tap any photo to take a closer look.</p></div>
+        <div class="gallery-grid" id="gallery-grid" aria-label="Birthday memories gallery"></div>
+      </div>
+    </section>
+
+    <section class="cake-section section-shell" aria-labelledby="cake-title">
+      <div class="cake-copy reveal"><span class="section-kicker">THE MOST IMPORTANT PART</span><h2 id="cake-title">One wish.<br><em>Make it a good one.</em></h2><p>Give the cake a tap and make a wish for the birthday star.</p><span class="cake-message" id="cake-message" aria-live="polite"></span></div>
+      <button class="cake-button reveal" type="button" aria-label="Tap the birthday cake to make a wish and celebrate"><span class="cake-sparkles" aria-hidden="true">✦　✧　✦</span><span class="candles" aria-hidden="true"><i class="candle"><b></b></i><i class="candle"><b></b></i><i class="candle"><b></b></i></span><span class="cake-top" aria-hidden="true"></span><span class="cake-layer cake-layer-top" aria-hidden="true"></span><span class="cake-layer cake-layer-bottom" aria-hidden="true"></span><span class="cake-plate" aria-hidden="true"></span></button>
+    </section>
+
+    <section class="rsvp-section section-pad" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="rsvp-layout section-shell"><div class="rsvp-copy reveal"><span class="section-kicker">DON'T KEEP THE PARTY WAITING</span><h2 id="rsvp-title">Save me<br>a <em>dance?</em></h2><p>Let us know if we should save you a slice. RSVP by <span data-rsvp-deadline>November 1st</span>!</p><span class="rsvp-decoration" aria-hidden="true">✦</span></div>
+        <div class="form-card reveal"><form id="rsvp-form" novalidate>
+          <div class="form-row"><div class="form-field"><label for="guest-name">Full name <span aria-hidden="true">*</span></label><input id="guest-name" name="name" type="text" autocomplete="name" placeholder="Your lovely name" required maxlength="80"></div><div class="form-field"><label for="guest-email">Email address <span aria-hidden="true">*</span></label><input id="guest-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="120"></div></div>
+          <fieldset class="form-field attendance-field"><legend>Can you make it? <span aria-hidden="true">*</span></legend><label class="radio-option"><input type="radio" name="attendance" value="yes" required><span>YES! I'll be there 🥳</span></label><label class="radio-option"><input type="radio" name="attendance" value="no" required><span>NO, I can't make it 😢</span></label></fieldset>
+          <div class="form-row"><div class="form-field"><label for="guest-count">Number of guests</label><select id="guest-count" name="guests"><option value="1">Just me</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option></select></div><div class="form-field"><label for="guest-note">Leave a little message <span class="optional">(optional)</span></label><input id="guest-note" name="message" type="text" placeholder="Can't wait to celebrate!" maxlength="240"></div></div>
+          <p class="form-error" id="form-error" role="alert" hidden></p><button class="button button-dark submit-button" type="submit">CONFIRM MY RSVP <span aria-hidden="true">💖</span></button><p class="form-footnote">Your reply makes our day. <span aria-hidden="true">✦</span></p>
+        </form><div class="form-success" id="form-success" role="status" tabindex="-1" hidden><span class="success-burst" aria-hidden="true">🎉</span><h3>YAY! <span aria-hidden="true">🎉</span></h3><p>Thank you, <strong id="success-name">friend</strong>!</p><p id="success-note">We can't wait to celebrate with you!</p><button class="text-link edit-rsvp" type="button">Change your reply</button></div></div>
+      </div>
+    </section>
+
+    <section class="location-section section-pad" id="location" aria-labelledby="location-title">
+      <div class="section-shell"><div class="section-heading reveal"><div><span class="section-kicker">WE'LL SAVE YOU A SPOT</span><h2 id="location-title">Meet us <em>there!</em></h2></div><p>One address. Excellent company. Very good cake.</p></div>
+        <div class="location-card reveal"><div class="location-map" role="img" aria-label="Illustrated map showing the party venue in Brooklyn"><div class="map-park">McCarren<br>Park</div><div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-road road-three"></div><span class="map-water"></span><span class="map-pin" aria-hidden="true">✦</span><span class="map-label" data-event-venue>The Glasshouse</span></div><div class="location-info"><span class="venue-pill"><span>✦</span> PARTY CENTRAL</span><h3 data-event-venue>The Glasshouse</h3><p><span data-event-address>47 Wythe Avenue</span><br><span data-city>Brooklyn, NY 11249</span></p><p class="location-note"><span aria-hidden="true">✧</span> A short walk from the Bedford Ave L stop</p><a class="button button-map" href="https://www.google.com/maps/search/?api=1&query=47+Wythe+Avenue+Brooklyn+NY+11249" target="_blank" rel="noopener noreferrer">GET DIRECTIONS <span aria-hidden="true">📍</span></a></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">✳</span><span>THE PARTY<span class="brand-dot">.</span></span></a><p>Made with <span aria-label="love">♥</span>, confetti & a whole lot of cake.</p><a class="back-top" href="#home">Back to the top ↑</a></footer>
+
+  <button class="music-toggle" id="music-toggle" type="button" aria-label="Play party music" aria-pressed="false"><span class="music-icon" aria-hidden="true">♫</span><span class="music-label">Party sounds</span><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Birthday photo gallery" aria-hidden="true" hidden><button class="lightbox-close" type="button" aria-label="Close photo gallery">×</button><button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous photo">‹</button><figure class="lightbox-figure"><img id="lightbox-image" src="" alt=""><figcaption id="lightbox-caption"></figcaption></figure><button class="lightbox-nav lightbox-next" type="button" aria-label="Next photo">›</button><span class="lightbox-count" id="lightbox-count" aria-live="polite"></span></div>
+  <canvas class="confetti-canvas" id="confetti-canvas" aria-hidden="true"></canvas>
+</body>
+</html>
